@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import 'swiper/swiper-bundle.css'
-import Swiper from "swiper";
+import Swiper, { Pagination,Autoplay } from 'swiper' 
 import { SliderContainer } from './style';
+Swiper.use([Pagination,Autoplay])
 
 function  Slider(props) {
   const [sliderSwiper, setSliderSwiper] = useState (null);
